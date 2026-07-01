@@ -74,6 +74,24 @@
     </div>
   </section>
 
+  <section class="rsvp-section">
+    <div class="rsvp-header">
+      <h2 class="script">Confirme sua presença! 🎉</h2>
+      <p>Me conta seu nome e quantas pessoas você vai levar (contando você mesma/o).</p>
+    </div>
+
+    <form class="rsvp-form" id="rsvpForm">
+      <input type="text" id="rsvpNome" placeholder="Seu nome" required maxlength="60">
+      <input type="number" id="rsvpQtd" placeholder="Pessoas" min="1" max="15" value="1" required>
+      <button type="submit" class="btn" id="rsvpBtn">Confirmar presença</button>
+    </form>
+    <div class="error-msg" id="rsvpError"></div>
+
+    <div class="rsvp-count" id="rsvpCount">Carregando confirmações...</div>
+
+    <div class="rsvp-list" id="rsvpList"></div>
+  </section>
+
   <div class="section-title">
     <h2>Sugestão de presentes 🎁</h2>
     <p>Clique em "ver produto" para conferir e depois marque o que você vai dar — assim ninguém repete!</p>
@@ -108,5 +126,6 @@
 
 <script src="gifts-data.js"></script>
 <script src="app.js"></script>
+<script src="rsvp.js"></script>
 </body>
 </html>

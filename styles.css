@@ -254,6 +254,118 @@ a { color: var(--gold); }
   .prefs-divider { display: none; }
 }
 
+/* ---------- RSVP / confirmação de presença ---------- */
+.rsvp-section {
+  margin: 0 0 30px;
+  background: var(--card-bg);
+  border: 2px solid var(--pink);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+}
+
+.rsvp-header h2 {
+  font-family: 'Dancing Script', cursive;
+  color: var(--gold);
+  font-size: clamp(1.6rem, 5vw, 2.1rem);
+  margin: 0 0 6px;
+}
+
+.rsvp-header p {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0 0 18px;
+}
+
+.rsvp-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.rsvp-form input[type="text"] {
+  flex: 1 1 220px;
+  max-width: 280px;
+  background: #0f0a0c;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--text);
+  padding: 10px 12px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.rsvp-form input[type="number"] {
+  width: 90px;
+  background: #0f0a0c;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--text);
+  padding: 10px 12px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.rsvp-form input:focus {
+  outline: none;
+  border-color: var(--pink);
+}
+
+.rsvp-count {
+  margin: 18px 0 6px;
+  font-size: 15px;
+  color: var(--text);
+}
+
+.rsvp-count strong {
+  color: var(--gold);
+  font-size: 1.3em;
+}
+
+.rsvp-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.rsvp-pill {
+  background: rgba(255,63,164,0.10);
+  border: 1px solid rgba(255,63,164,0.35);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rsvp-pill .qty {
+  background: var(--gold);
+  color: var(--bg);
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 1px 8px;
+  font-size: 12px;
+}
+
+.rsvp-pill button {
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 13px;
+  padding: 0 0 0 4px;
+  line-height: 1;
+}
+
+.rsvp-pill button:hover { color: var(--pink); }
+
 /* ---------- section headers ---------- */
 .section-title {
   text-align: center;
